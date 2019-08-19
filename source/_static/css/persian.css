@@ -1,0 +1,88 @@
+/*
+ * فونت فارسی مناسب یکی از مهمترین قسمت های یک داکیومنت است در این قسمت فونت 
+ *‌ ا «کالیبری» یکی از فونت های ویندوز ده و انتخاب کردم که هم فارسی مناسبی داره و
+ * هم انگلیسی خیلی خوبی داره.
+ */
+@import "fontiran.css";
+
+a, h1, h2, h3, h4, h5, h6, p, b, input, div {
+    font-family: iransharp, Arial !important;
+}
+
+/*
+ * این کلاس برای زمانی استفاده می شود که داکیومنت مابه زبان فارسی نوشته شده باشد
+ * در این حالت فقط کافی است در ابتدای داکیومنت «دایرکتیو» زیر را اضافه کنیم:
+ * 
+ * .. rst-class:: persian
+ *
+ * تمام تگ هایی که زیر مجموعه این تگ باشند و نیازی نباشد که جهت آنها تغییر کند 
+ * در این قسمت به همان جهت عادی خود برگردانده می شوند ولی به شکلی که در مستندات
+ * دیگر تاثیر گذار نباشند.
+ */
+div.persian { 
+    direction: rtl;
+    text-align: right !important;
+    unicode-bidi: embed;
+}
+
+.sphinxsidebarwrapper ul.persian {
+    direction: rtl;
+    text-align: right !important;
+    unicode-bidi: embed;
+}
+
+/*
+ * Use this if you all your literal blocks (::) are LTR 
+ */
+div.persian pre {
+    direction: ltr; 
+    text-align: left;
+    unicode-bidi: embed;
+}
+
+/*
+ * Use this if you all your literal blocks (````) are LTR 
+ */
+div.persian code, div.persian code * {
+    direction: ltr; 
+    text-align: left;
+    unicode-bidi: embed;
+}
+
+/*
+ * Use this if you all your inline literals (``) are LTR 
+ */
+div.persian tt {
+    direction: ltr; 
+    text-align: left;
+    unicode-bidi: embed;
+}
+
+/*
+ * Use this if you all your interpretted text (`) is LTR 
+ */
+div.persian cite {
+    direction: ltr;
+    text-align: left;
+    unicode-bidi: embed;
+}
+
+/*
+ * در بلاک نکات خود تیتر «نکته» که «نوت» نوشته می شود باید چپ چین باشد تا بهتر 
+ * دیده بشود
+ */
+div.persian .admonition-title {
+    direction: ltr; 
+    text-align: left;
+    unicode-bidi: embed;
+}
+
+/*
+ * برای حالتی که به اختیار می خواهیم جهت یک عنصر را تغییر بدهیم
+ */
+div.persian .ltr {
+    direction: ltr; 
+    text-align: left;
+    unicode-bidi: embed;
+}
+
