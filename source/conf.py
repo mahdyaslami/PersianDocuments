@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Guideline'
+project = 'Persian Documents'
 copyright = '2019, Mahdi Aslami Khavari'
 author = 'Mahdi Aslami'
 
