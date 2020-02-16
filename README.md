@@ -1,4 +1,4 @@
-﻿<div style="direction: rtl;">
+﻿<div style="direction: rtl; text-align: right;">
 
 بسم الله الرحمن الرحیم
 ===================
