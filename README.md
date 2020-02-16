@@ -1,8 +1,4 @@
-﻿<style>
-* {
-    direction: rtl;
-}
-</style>
+﻿<div style="direction: rtl;">
 
 بسم الله الرحمن الرحیم
 ===================
@@ -55,5 +51,7 @@ $ make html
 [www.fontiran.com][1]
 
 مهدی اسلمی خاوری 28 مرداد 1398
+
+</div>
 
 [1]: www.fontiran.com
